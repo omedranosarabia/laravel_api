@@ -19,4 +19,4 @@ Route::apiResource('v2/posts', PostV2::class)
     ->only([
         'index',
         'show',
-    ]);
+    ])->middleware('auth:sanctum');
